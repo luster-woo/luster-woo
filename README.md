@@ -28,7 +28,7 @@
 ### 📈 Activity
 ### 🌱 Algorithm Practice (CodeTree)
 
-- 🔗 CodeTree Profile: https://codetree.ai/profile/닉네임
+- 🔗 CodeTree Profile: https://codetree.ai/profile/leeyw001013
 - 🧠 Focus: 구현 / DFS·BFS / 삼성 기출
 - 🐍 Language: Python
 - 
