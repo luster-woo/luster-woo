@@ -10,13 +10,13 @@
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=luster-woo&theme=github-compact)
 
-## 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=luster-woo&theme=darkhub&no-frame=true&row=1&cache_seconds=86400" />
+</p>
 
-<img src="https://github-profile-trophy.vercel.app/?username=luster-woo&theme=darkhub&no-frame=true&row=1" />
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true" />
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true&cache_seconds=86400" />
+</p>
 
 
 ---
