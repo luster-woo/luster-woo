@@ -13,7 +13,6 @@
 ## 🧠 Algorithm Profile
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=leeyw1709)](https://solved.ac/profile/leeyw1709)
-[![CodeTree](https://img.shields.io/badge/CodeTree-Algorithm-2ECC71?style=flat&logo=codeforces&logoColor=white)](https://codetree.ai/profile/leeyw001013)
 
 > CodeTree 문제 풀이는 GitHub 연동을 통해 자동으로 커밋되고 있습니다.  
 
