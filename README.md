@@ -10,9 +10,12 @@
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=luster-woo&theme=github-compact)
 
-![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=luster-woo&theme=onedark&no-frame=true&row=1&column=6)
+## 📊 GitHub Stats
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&langs_count=6&hide_border=true&theme=github_dark)
+![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=luster-woo&theme=darkhub&no-frame=true&row=1)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true)
+
 
 ---
 
