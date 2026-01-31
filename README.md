@@ -18,11 +18,13 @@
 
 <br/><br/>
 
-<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=luster-woo&show_icons=true&theme=github_dark&hide_border=true" height="180" alt="stats" />
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true" height="180" alt="top-langs" />
+<a href="https://git.io/streak-stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=luster-woo&theme=github-dark&hide_border=true" alt="GitHub Streak" />
+</a>
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  </a>
 
 </div>
-
 ## 🧠 Algorithm Profile
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=leeyw1709)](https://solved.ac/profile/leeyw1709)
