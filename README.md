@@ -4,7 +4,7 @@
 
 ![Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=luster-woo&theme=github_dark)
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=woo123)](https://solved.ac/profile/leeyw1709)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=leeyw1709)](https://solved.ac/profile/leeyw1709)
 
 ### 🛠 Tech Stack
 
