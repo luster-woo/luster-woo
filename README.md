@@ -15,19 +15,6 @@
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=leeyw1709)](https://solved.ac/profile/leeyw1709)
 
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=luster-woo&theme=darkhub&no-frame=true&margin-w=15" alt="Trophy" />
-
-<br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true" alt="Top Langs" />
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=luster-woo&theme=github-compact" alt="Activity Graph" />
-
-</div>
 
 
 ## 📂 CodeTree Solutions Repository
