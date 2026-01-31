@@ -12,11 +12,10 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=luster-woo&show_icons=true&theme=github_dark&hide_border=true" height="180" alt="stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true" height="180" alt="top-langs" />
+<img src="https://github-readme-stats.vercel.app/api?username=luster-woo&show_icons=true&theme=github_dark&hide_border=true&cache=reset" height="180" alt="stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true&cache=reset" height="180" alt="top-langs" />
 
 </div>
-
 ---
 
 ## 🧠 Algorithm Profile
