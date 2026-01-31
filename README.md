@@ -36,6 +36,5 @@
 
 - CodeTree 문제 풀이를 주제별로 정리한 저장소입니다.
 - 풀이 과정과 접근 방법을 코드로 남기고 있습니다.
-
-![GitHub Streak](https://streak-stats.demolab.com?user=luster-woo&theme=github_dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=luster-woo&show_icons=true)
 
