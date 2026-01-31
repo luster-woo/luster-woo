@@ -18,17 +18,6 @@
 
 ---
 
-## 🌱 Algorithm Practice (CodeTree)
-
-- 🔗 CodeTree Profile: https://codetree.ai/profile/leeyw001013
-- 🐍 Language: Python
-- 🧩 Focus  
-  - 구현  
-  - DFS / BFS  
-  - 삼성 기출 문제  
-
----
-
 ## 📂 CodeTree Solutions Repository
 
 👉 https://github.com/luster-woo/codetree
