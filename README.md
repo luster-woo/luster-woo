@@ -12,11 +12,16 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=luster-woo&show_icons=true&theme=github_dark&hide_border=true&cache=reset" height="180" alt="stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true&cache=reset" height="180" alt="top-langs" />
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img src="https://github-profile-trophy.vercel.app/?username=luster-woo&theme=darkhub&no-frame=true&row=1&margin-w=15" alt="GitHub Trophy" />
+</a>
+
+<br/><br/>
+
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=luster-woo&show_icons=true&theme=github_dark&hide_border=true" height="180" alt="stats" />
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true" height="180" alt="top-langs" />
 
 </div>
----
 
 ## 🧠 Algorithm Profile
 
