@@ -26,4 +26,4 @@
 </p>
 
 ### 📈 Activity
-![GitHub Streak](https://streak-stats.demolab.com?user=깃허브아이디&theme=default)
+![GitHub Streak](https://streak-stats.demolab.com?user=luster-woo&theme=default)
