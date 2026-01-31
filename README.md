@@ -26,4 +26,14 @@
 </p>
 
 ### 📈 Activity
-![GitHub Streak](https://streak-stats.demolab.com?user=luster-woo&theme=default)
+### 🌱 Algorithm Practice (CodeTree)
+
+- 🔗 CodeTree Profile: https://codetree.ai/profile/닉네임
+- 🧠 Focus: 구현 / DFS·BFS / 삼성 기출
+- 🐍 Language: Python
+- 
+[![CodeTree](https://img.shields.io/badge/CodeTree-Algorithm-2ECC71?style=flat&logo=codeforces&logoColor=white)](https://codetree.ai/profile/닉네임)
+> CodeTree 문제 풀이는 GitHub 연동을 통해 자동으로 커밋되고 있습니다.
+> 
+
+
