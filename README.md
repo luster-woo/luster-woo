@@ -12,9 +12,11 @@
 
 ## 📊 GitHub Stats
 
-![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=luster-woo&theme=darkhub&no-frame=true&row=1)
+<img src="https://github-profile-trophy.vercel.app/?username=luster-woo&theme=darkhub&no-frame=true&row=1" />
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true)
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=github_dark&hide_border=true" />
 
 
 ---
