@@ -10,22 +10,9 @@
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=luster-woo&theme=github-compact)
 
-<div align="center">
+![Luster-woo's GitHub stats](https://github-readme-stats.vercel.app/api?username=luster-woo&show_icons=true&theme=dark&hide_border=true)
 
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=luster-woo&theme=darkhub&no-frame=true&row=1&margin-w=15" alt="GitHub Trophy" />
-</a>
-
-<br/><br/>
-
-<a href="https://git.io/streak-stats">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=luster-woo&theme=github-dark&hide_border=true" alt="GitHub Streak" />
-</a>
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  </a>
-
-</div>
-## 🧠 Algorithm Profile
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=luster-woo&layout=compact&theme=dark&hide_border=true)
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=leeyw1709)](https://solved.ac/profile/leeyw1709)
 
