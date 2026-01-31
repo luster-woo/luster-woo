@@ -1,4 +1,3 @@
-구미 싸피 15기 비전공자
 
 ![GitHub Activity](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=luster-woo&theme=github_dark)
 
