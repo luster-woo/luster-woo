@@ -25,12 +25,5 @@
   <img src="https://img.shields.io/badge/Data%20Structure-4B8BBE?style=flat"/>
 </p>
 
-## 🧩 Algorithm Practice (CodeTree)
-
-<a href="https://codetree.ai/profile/닉네임" target="_blank">
-  <img src="https://img.shields.io/badge/CodeTree-Algorithm-2ECC71?style=for-the-badge"/>
-</a>
-
-- CodeTree 문제 풀이 (GitHub 연동)
-- Python 기반 풀이
-- 삼성 기출 / 구현 / DFS·BFS 중심
+### 📈 Activity
+![GitHub Streak](https://streak-stats.demolab.com?user=깃허브아이디&theme=default)
