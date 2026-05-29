@@ -28,3 +28,9 @@
 - CodeTree 문제 풀이를 주제별로 정리한 저장소입니다.
 
 - 풀이 과정과 접근 방법을 코드로 남기고 있습니다.
+  
+
+👉 https://github.com/luster-woo/ssafy-pjt
+- SSAFY에서 한 관통 프로젝트를 정리한 저장소입니다.
+
+  
