@@ -31,7 +31,7 @@
 | 숙련도 | 기술 | 어디서 썼나 |
 |:---:|---|---|
 | **고급**<br><sub>프로젝트에서 주도적으로 활용</sub> | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white) ![DRF](https://img.shields.io/badge/DRF-A30000?style=flat-square&logo=django&logoColor=white) ![JWT](https://img.shields.io/badge/SimpleJWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white) | FinFit 백엔드 API 전 범위 |
-| | ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | SSabway 화면 17개 |
+| | ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | SOBI 화면 14개 · SSabway 페이지 9개 신규·8개 수정 |
 | **중급**<br><sub>문서를 보며 독립 개발</sub> | ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logoColor=white) ![Vue](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![MSW](https://img.shields.io/badge/MSW-FF6A33?style=flat-square&logo=mockserviceworker&logoColor=white) ![WebRTC](https://img.shields.io/badge/OpenVidu_%28WebRTC%29-333333?style=flat-square&logo=webrtc&logoColor=white) | SQLD · SSAFY 학습 · SSabway |
 | | ![Docker](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white) ![nginx](https://img.shields.io/badge/nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitLab](https://img.shields.io/badge/GitLab_MR-FC6D26?style=flat-square&logo=gitlab&logoColor=white) | FinFit 운영 배포 · 팀 협업 |
 | **초급**<br><sub>예제를 참고해 구현</sub> | ![AWS EC2](https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL_16-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![gunicorn](https://img.shields.io/badge/gunicorn-499848?style=flat-square&logo=gunicorn&logoColor=white) | FinFit 운영 배포 1회 (상시 운영 경험 없음) |
@@ -47,7 +47,7 @@
 <img src="https://img.shields.io/badge/역할-Backend_전체-1f4e8c?style=flat-square" alt="역할"/>
 
 금융성향 검사 결과에 맞춰 예·적금, 주식, 카드를 추천하고 AI 상담을 제공하는 서비스입니다.<br>
-**내 역할** 인증·금융상품·추천·주식·뉴스·AI 상담 API 설계·구현, 외부 API 5종 연동 · 프론트엔드(Vue)는 팀원 담당
+**내 역할** 인증·금융상품·추천·주식·뉴스·AI 상담 API 설계·구현, 외부 API 6종 연동 · 프론트엔드(Vue)는 팀원 담당
 
 <table>
 <tr>
@@ -220,11 +220,11 @@ flowchart LR
 <img src="https://img.shields.io/badge/🏆_SSAFY_공통_프로젝트-우수상%282위%29-DAA520?style=flat-square" alt="수상"/>
 
 표지판을 촬영하면 역 안 위치를 인식해 길을 안내하고, 필요하면 상담원과 화상으로 연결하는 서비스입니다.<br>
-**내 역할** 사용자·관리자 화면 17개, OpenVidu 화상 세션, 4개국어, MSW 목 서버 · 백엔드·AI 모델·CI/CD는 팀원 담당
+**내 역할** 페이지 9개 신규·팀 페이지 8개 수정, 화상 상담 페이지 UI(OpenVidu), 4개국어, MSW 목 서버 · 백엔드·AI 모델·CI/CD는 팀원 담당
 
 <table>
 <tr>
-<td align="center" width="33%"><sub>담당 화면</sub><br><h3>17개</h3><sub>API 3일 지연 중 먼저 개발</sub></td>
+<td align="center" width="33%"><sub>새로 만든 페이지</sub><br><h3>9개</h3><sub>API 지연 중 먼저 개발</sub></td>
 <td align="center" width="33%"><sub>다국어</sub><br><h3>4개국어</h3><sub>한 · 영 · 일 · 중</sub></td>
 <td align="center" width="33%"><sub>화상 상담 화면 비율</sub><br><h3>기기별 편차 → 일치</h3><sub>0.46~0.56 차이 해소</sub></td>
 </tr>
@@ -250,15 +250,15 @@ flowchart LR
 </details>
 
 <details>
-<summary><b>🔥 트러블슈팅 ② 백엔드 API 3일 지연</b></summary>
+<summary><b>🔥 트러블슈팅 ② 백엔드 API 지연</b></summary>
 <br>
 
 | | |
 |---|---|
-| **상황** | 백엔드 API가 일정보다 3일 늦어져 화면 작업이 멈출 상황 |
+| **상황** | 백엔드 API가 일정보다 늦어져 화면 작업이 멈출 상황 |
 | **과제** | API 없이도 화면 개발을 계속할 방법이 필요 |
 | **행동** | MSW를 강의·예제로 익혀 팀에 도입 제안, 요청·응답 형식을 먼저 정의해 목 서버 구축 |
-| **결과** | 담당 화면 **17개**를 먼저 개발하고, 실제 API 완성 후 연결 교체 |
+| **결과** | 담당 페이지 **9개**를 먼저 개발하고, 실제 API 완성 후 연결 교체 |
 
 </details>
 
@@ -274,6 +274,34 @@ flowchart LR
 
 <br>
 
+### 3. SOBI · 소상공인 정책자금 매칭 플랫폼
+
+<a href="https://github.com/luster-woo/Sobi"><img src="https://img.shields.io/badge/Repository-Sobi-181717?style=flat-square&logo=github" alt="repo"/></a>
+<img src="https://img.shields.io/badge/2026.09-6인-555?style=flat-square" alt="기간"/>
+<img src="https://img.shields.io/badge/역할-Frontend_파트장-1f4e8c?style=flat-square" alt="역할"/>
+<img src="https://img.shields.io/badge/🏆_SSAFY_특화_프로젝트-우수상%283위%29-DAA520?style=flat-square" alt="수상"/>
+
+마이데이터 연동으로 대출·지원사업 자격을 판정하고, 서류 작성·검증부터 상환까지 잇는 소상공인 정책자금 플랫폼입니다.<br>
+**내 역할** 프론트 기반 설계(디렉토리 규칙·ESLint·axios 인터셉터·라우팅 가드), 인증·온보딩·대시보드·마이페이지, 프론트 보안 · 백엔드·AI·CI/CD는 팀원 담당
+
+<table>
+<tr>
+<td align="center" width="33%"><sub>담당 화면</sub><br><h3>14개</h3><sub>전체 22개 중</sub></td>
+<td align="center" width="33%"><sub>커밋</sub><br><h3>180</h3><sub>+29,746줄 · MR 88</sub></td>
+<td align="center" width="33%"><sub>프론트 보안</sub><br><h3>규칙 4건</h3><sub>ESLint로 회귀 차단</sub></td>
+</tr>
+</table>
+
+| 기술 선택 | 대안 | 이유 |
+|---|---|---|
+| 서버 우선 MSW | 도메인 단위 목 on/off | 실서버를 먼저 부르고 없는 엔드포인트만 목이 받게 해, 백엔드가 구현하는 순간 설정 변경 없이 목에서 빠짐 |
+| 401 재발급 Promise 공유 | 요청마다 재발급 | 회전형 refreshToken이라 동시 재발급이 두 번째부터 로그아웃을 일으킴 |
+| 대시보드 패널 단위 실패 격리 | 화면 전체 에러 | 판정 조회 하나가 실패해도 매출·상환 정보는 그대로 보여야 함 |
+
+<sub>자세한 트러블슈팅·회고는 [PORTFOLIO.md](https://github.com/luster-woo/Sobi/blob/develop/PORTFOLIO.md)</sub>
+
+<br>
+
 ## 📚 Etc
 
 | 저장소 | 내용 |
@@ -281,7 +309,7 @@ flowchart LR
 | [codetree](https://github.com/luster-woo/codetree) | 코드트리 **585문제 / 59일** 풀이를 주제별로 정리 |
 | [ssafy_gumi_study](https://github.com/luster-woo/ssafy_gumi_study) | 6명이 **3.5개월** 진행한 알고리즘 스터디 · Fork & PR 제출, 상호 코드 리뷰 |
 | [TIL](https://github.com/luster-woo/TIL) | SSAFY 1학기 **95일** 학습 기록 |
-| [ssafy-pjt](https://github.com/luster-woo/ssafy-pjt) | SSAFY 관통 프로젝트 정리 |
+| [ssafy-pjt](https://github.com/luster-woo/ssafy-pjt) | SSAFY 1학기 주차별 관통 프로젝트 11건 (2인 페어) |
 
 <div align="center">
 
