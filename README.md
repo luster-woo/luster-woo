@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f4e8c,100:3b82f6&height=170&section=header&text=Backend%20Developer&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=%EC%9D%B4%EC%9C%A4%EC%9A%B0&descSize=20&descAlignY=60" width="100%" alt="이윤우 Backend Developer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f4e8c,100:3b82f6&height=170&section=header&text=Web%20Developer&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=%EC%9D%B4%EC%9C%A4%EC%9A%B0&descSize=20&descAlignY=60" width="100%" alt="이윤우 Web Developer"/>
 
 ### 외부 API 장애는 대체 경로로 막고, 4~5초 걸리던 조회는 1초 안으로 줄였습니다
 
