@@ -14,6 +14,8 @@
 
 2026.10 ~ 11 · 6명 · Java, Spring Boot 백엔드 · SSAFY 자율 프로젝트
 
+<img src="https://github.com/luster-woo/AudiSay/raw/main/docs/portfolio/audisay_chat.png" width="560" alt="AudiSay 재생 화면과 음성 챗봇">
+
 시각장애인이 영상 해설을 듣다가 "방금 누가 골 넣었어?" 하고 물으면 그 장면으로 옮겨 주는 서비스입니다. 저는 해설을 만드는 작업 흐름이랑 해설 조회, 음성 챗봇, 인증 서류 OCR 쪽 서버를 맡았습니다.
 
 잘 돌아가는 것처럼 보이는데 속에서는 깨지는 경우를 일부러 만들어 봤습니다. RabbitMQ를 40초 꺼 둔 채로 작업 50개를 넣었더니, API는 정상 응답을 주는데 메시지는 50개가 전부 사라져 있었어요. 메시지를 업무 데이터와 같은 트랜잭션에 저장해 두고 커밋된 뒤에 발행하도록(Outbox) 바꾼 다음 같은 실험을 다시 했을 때는 하나도 사라지지 않았습니다.
@@ -28,6 +30,8 @@
 
 2026.05 ~ 06 · 2명 · 팀장, Django 백엔드 전체 · [저장소](https://github.com/luster-woo/finance_pjt)
 
+<img src="https://github.com/luster-woo/finance_pjt/raw/master/screenshots/thumb/13_test_result.png" width="560" alt="FinFit 금융성향 검사 결과와 추천">
+
 금융성향 검사를 하고 그 결과로 예·적금, 주식, 카드를 추천해 주는 서비스입니다.
 
 상품 목록을 열 때마다 금융감독원 API를 직접 불렀는데 이게 평균 4.5초씩 걸렸습니다. 외부 API 속도는 제가 바꿀 수 없어서 부르는 위치를 옮겼습니다. 상품은 관리자용 API로 미리 받아 DB에 넣어 두고, 사용자 화면은 DB만 읽습니다. 같은 로컬 환경에서 바꾸기 전과 뒤를 20번씩 재 보니 평균 80ms였습니다. 대신 상품 정보는 관리자가 다시 받아 와야 바뀝니다.
@@ -40,13 +44,17 @@
 
 2026.07 ~ 08 · 6명 · 프론트엔드, 관리자 앱 전담 · SSAFY 공통 프로젝트 우수상(팀) · [저장소](https://github.com/luster-woo/SSabway)
 
+<img src="https://github.com/luster-woo/SSabway/raw/main/assets/%EC%98%AC%EB%A6%B4%EC%82%AC%EC%A7%84_SSabway/thumb-admin-consult.png" width="560" alt="SSabway 관리자 앱 화상 상담">
+
 지하철역 안에서 안내 표지판을 찍으면 위치를 알아내 길을 알려 주고, 필요하면 역무원과 화상으로 연결해 주는 서비스입니다.
 
 화상 상담 중에 역무원이 "화면 오른쪽 표지판으로 가세요"라고 해도 사용자 화면에는 그 표지판이 없던 문제가 있었습니다. 같은 영상을 각자 화면에 맞춰 잘라 보여 주는데, 휴대폰마다 화면 비율이 0.46에서 0.56까지 달랐던 거예요. 주소창이 나왔다 들어갔다 하면 높이가 또 바뀌어서 값을 고정할 수도 없었습니다. 그래서 접속할 때 실제 비율을 재서 서로 보내고, 받은 값에 맞추게 했습니다.
 
 ### SOBI
 
-2026.08 ~ 10 · 6명 · 프론트엔드 파트장 · SSAFY 특화 프로젝트 우수상(팀) · [저장소](https://github.com/luster-woo/Sobi)
+2026.08 ~ 10 · 6명 · 프론트엔드 파트장 · SSAFY 특화 프로젝트 우수상(팀) · [저장소](https://github.com/luster-woo/Sobi) · [제가 맡은 부분](https://github.com/luster-woo/Sobi/blob/develop/PORTFOLIO.md)
+
+<img src="https://github.com/luster-woo/Sobi/raw/develop/docs/screenshots/%EC%98%AC%EB%A6%B4%EC%82%AC%EC%A7%84_Sobi/thumb-10_dashboard.png" width="560" alt="SOBI 대시보드">
 
 소상공인에게 맞는 정책자금과 대출 상품을 찾아 주고 신청 서류 쓰는 걸 도와주는 플랫폼입니다. 인증, 대시보드, 마이페이지, 프론트 보안을 맡았습니다.
 
