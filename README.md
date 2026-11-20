@@ -1,77 +1,77 @@
 # 이윤우
 
-풀스택 개발자입니다. 서버는 Java·Spring과 Django, 화면은 React로 만들어 왔고 EC2 배포도 한 번 직접 해봤습니다.
+풀스택 개발자입니다. 서버는 Java·Spring과 Django, 화면은 React로 만듭니다.
+만든 기능이 정말 버티는지 일부러 망가뜨려 보고 숫자로 확인하는 편입니다.
 
-생명과학을 전공하다가 컴퓨터학부를 복수전공했습니다. 지금은 SSAFY 15기 2학기 막바지이고 2026년 12월에 수료합니다.
+생명과학을 전공하다 컴퓨터학부를 복수전공했고, SSAFY 15기를 2026년 12월에 수료합니다.
 
-아래에 나오는 숫자는 전부 직접 잰 값이라, 어떻게 쟀는지도 같이 적었습니다.
+메일 leeyw001013@naver.com
 
-메일: leeyw001013@naver.com
+## 한눈에
 
-## 만든 것
+| 프로젝트 | 기간 | 인원 | 맡은 일 | 숫자로 보면 |
+|---|---|---|---|---|
+| [AudiSay](https://github.com/luster-woo/AudiSay/blob/main/PORTFOLIO.md) | 2026.10–11 | 6명 | Spring 백엔드 | 브로커 장애 중 메시지 유실 50/50 → 0 |
+| [FinFit](https://github.com/luster-woo/finance_pjt) | 2026.05–06 | 2명 | 팀장, Django 백엔드 전체 | 상품 조회 평균 4.5초 → 80ms |
+| [SSabway](https://github.com/luster-woo/SSabway) | 2026.07–08 | 6명 | 프론트엔드, 관리자 앱 전담 | 관리자 API 9종 · 공통 프로젝트 우수상(팀) |
+| [SOBI](https://github.com/luster-woo/Sobi/blob/develop/PORTFOLIO.md) | 2026.08–10 | 6명 | 프론트엔드 파트장 | 화면 22개 중 14개 · 특화 프로젝트 우수상(팀) |
 
-### AudiSay
+숫자는 전부 직접 잰 값이고, 잰 방법은 각 저장소 문서에 적어 두었습니다.
 
-2026.10 ~ 11 · 6명 · Java, Spring Boot 백엔드 · SSAFY 자율 프로젝트
+## 프로젝트
 
-<img src="https://github.com/luster-woo/AudiSay/raw/main/docs/portfolio/audisay_chat.png" width="560" alt="AudiSay 재생 화면과 음성 챗봇">
+### AudiSay · 시각장애인용 AI 화면해설
 
-시각장애인이 영상 해설을 듣다가 "방금 누가 골 넣었어?" 하고 물으면 그 장면으로 옮겨 주는 서비스입니다. 저는 해설을 만드는 작업 흐름이랑 해설 조회, 음성 챗봇, 인증 서류 OCR 쪽 서버를 맡았습니다.
+<img src="https://github.com/luster-woo/AudiSay/raw/main/docs/portfolio/audisay_chat.png" width="480" alt="AudiSay 재생 화면과 음성 챗봇">
 
-잘 돌아가는 것처럼 보이는데 속에서는 깨지는 경우를 일부러 만들어 봤습니다. RabbitMQ를 40초 꺼 둔 채로 작업 50개를 넣었더니, API는 정상 응답을 주는데 메시지는 50개가 전부 사라져 있었어요. 메시지를 업무 데이터와 같은 트랜잭션에 저장해 두고 커밋된 뒤에 발행하도록(Outbox) 바꾼 다음 같은 실험을 다시 했을 때는 하나도 사라지지 않았습니다.
+영상 해설을 듣다가 "방금 누가 골 넣었어?" 하고 물으면 답해 주고 그 장면으로 옮겨 주는 서비스입니다. 해설 생성 작업 흐름, 해설 조회, 음성 챗봇, 인증 서류 OCR 쪽 Spring 서버를 맡았습니다.
 
-해설 조회가 느렸을 때는 처음에 N+1 쿼리를 의심했는데 아니었습니다. 음성 파일 주소에 서명을 붙이는 계산을 꺼 보니까 바로 빨라지더라고요. 서명한 주소만 캐시하고 응답을 gzip으로 줄여서 p95가 562ms에서 61ms로 내려갔습니다(동시 요청 30).
+- RabbitMQ를 40초 멈춰 보니 API는 정상인데 메시지 50개가 전부 사라졌습니다. Outbox로 바꾼 뒤 같은 실험에서는 0개
+- 해설 조회 p95 562ms → 61ms. 의심했던 N+1이 아니라 음성 주소 서명 계산이 원인이었습니다
+- 챗봇은 평가 문항 192개를 먼저 만들고 설계를 바꿔 가며 쟀습니다. 의도 분류 95.5% → 99.1%
 
-챗봇은 평가 문항 192개를 먼저 써 놓고 설계를 바꿔 가며 쟀습니다. 규칙으로 먼저 처리하고 애매한 말만 LLM에 보내는 쪽이 정확도가 높았고(의도 분류 95.5% → 99.1%, 112문항) 비용도 덜 들었습니다.
+로컬 측정이고 실사용자 데이터는 없습니다. 코드는 상당 부분 Claude와 함께 썼고, 구조와 대안 선택, 평가와 측정은 직접 했습니다. [자세히 보기](https://github.com/luster-woo/AudiSay/blob/main/PORTFOLIO.md)
 
-전부 로컬에서 잰 값이고 실제 사용자 데이터는 없습니다. 코드는 [AudiSay 저장소](https://github.com/luster-woo/AudiSay)에 있고, 제가 맡은 부분의 구조와 측정 기록은 그 안의 [PORTFOLIO.md](https://github.com/luster-woo/AudiSay/blob/main/PORTFOLIO.md)에 따로 적었습니다. 코드는 상당 부분 Claude와 같이 썼습니다. 어떤 구조로 갈지, 무엇을 버릴지, 평가 문항과 측정은 제가 했습니다.
+### FinFit · 금융성향 기반 상품 추천
 
-### FinFit
+<img src="https://github.com/luster-woo/finance_pjt/raw/master/screenshots/thumb/13_test_result.png" width="480" alt="FinFit 금융성향 검사 결과와 추천">
 
-2026.05 ~ 06 · 2명 · 팀장, Django 백엔드 전체 · [저장소](https://github.com/luster-woo/finance_pjt)
+금융성향 검사 결과로 예·적금, 주식, 카드를 추천해 주는 서비스입니다. 2인 팀의 팀장으로 Django 백엔드 전체를 맡았습니다.
 
-<img src="https://github.com/luster-woo/finance_pjt/raw/master/screenshots/thumb/13_test_result.png" width="560" alt="FinFit 금융성향 검사 결과와 추천">
+- 상품을 열 때마다 부르던 금융감독원 API를 관리자 수집 API로 옮겨 평균 4.5초 → 80ms (로컬, 전후 각 20회)
+- AI 추천이 실패하면 다른 모델, 그다음 점수 계산으로 넘어가게 해 둬서, 발표 이틀 전 사용량 한도가 바닥났을 때도 추천은 결과가 나왔습니다
+- 석 달 뒤 EC2에 Docker Compose로 직접 배포했고, 막힌 네 군데를 [배포 문서](https://github.com/luster-woo/finance_pjt/tree/master/deploy)에 정리했습니다. 지금은 인스턴스를 내려 접속 주소는 없습니다
 
-금융성향 검사를 하고 그 결과로 예·적금, 주식, 카드를 추천해 주는 서비스입니다.
+### SSabway · 지하철 실내 길안내와 화상 상담
 
-상품 목록을 열 때마다 금융감독원 API를 직접 불렀는데 이게 평균 4.5초씩 걸렸습니다. 외부 API 속도는 제가 바꿀 수 없어서 부르는 위치를 옮겼습니다. 상품은 관리자용 API로 미리 받아 DB에 넣어 두고, 사용자 화면은 DB만 읽습니다. 같은 로컬 환경에서 바꾸기 전과 뒤를 20번씩 재 보니 평균 80ms였습니다. 대신 상품 정보는 관리자가 다시 받아 와야 바뀝니다.
+<img src="https://github.com/luster-woo/SSabway/raw/main/assets/%EC%98%AC%EB%A6%B4%EC%82%AC%EC%A7%84_SSabway/thumb-admin-consult.png" width="480" alt="SSabway 관리자 앱 화상 상담">
 
-추천은 AI가 답을 안 주면 다른 모델로, 그것도 안 되면 미리 정해 둔 점수 계산으로 넘어가게 만들어 놨습니다. 발표 이틀 전에 팀이 같이 쓰는 사용량 한도가 다 떨어진 적이 있는데, 그날 추천은 점수 계산 쪽으로 결과가 나왔습니다. 대비를 안 해 둔 번역, AI 상담, 주간 브리핑은 그대로 멈췄고요. 가벼운 모델로 바꾸고 사용량을 더 받아서 발표 전에 살렸습니다.
+역 안 표지판을 찍으면 길을 알려 주고, 필요하면 역무원과 화상으로 연결해 주는 서비스입니다. 프론트엔드에서 관리자 앱을 전담했습니다.
 
-프로젝트 기간에는 배포를 못 했습니다. 배포를 일정에 넣지 않은 건 제 판단이었어요. 석 달 뒤에 다시 열어서 EC2에 Docker Compose로 올렸고, 서버에서 막혔던 네 군데는 [배포 문서](https://github.com/luster-woo/finance_pjt/tree/master/deploy)에 적어 놨습니다. 확인을 마치고 인스턴스는 내려서 지금 접속할 주소는 없습니다.
+- 휴대폰마다 화면 비율이 0.46~0.56으로 달라 상담원과 사용자가 서로 다른 화면을 보던 문제를, 접속할 때 실제 비율을 재서 주고받는 방식으로 팀원과 함께 고쳤습니다
 
-### SSabway
+### SOBI · 소상공인 정책자금 플랫폼
 
-2026.07 ~ 08 · 6명 · 프론트엔드, 관리자 앱 전담 · SSAFY 공통 프로젝트 우수상(팀) · [저장소](https://github.com/luster-woo/SSabway)
+<img src="https://github.com/luster-woo/Sobi/raw/develop/docs/screenshots/%EC%98%AC%EB%A6%B4%EC%82%AC%EC%A7%84_Sobi/thumb-10_dashboard.png" width="480" alt="SOBI 대시보드">
 
-<img src="https://github.com/luster-woo/SSabway/raw/main/assets/%EC%98%AC%EB%A6%B4%EC%82%AC%EC%A7%84_SSabway/thumb-admin-consult.png" width="560" alt="SSabway 관리자 앱 화상 상담">
+소상공인에게 맞는 정책자금과 대출을 찾아 주고 신청 서류를 돕는 플랫폼입니다. 프론트엔드 파트장으로 인증, 대시보드, 마이페이지, 프론트 보안을 맡았습니다.
 
-지하철역 안에서 안내 표지판을 찍으면 위치를 알아내 길을 알려 주고, 필요하면 역무원과 화상으로 연결해 주는 서비스입니다.
+- 첫날 올린 기반 위에 MR 하나로 파일 96개가 들어와 일정이 이틀 밀렸습니다. 그 뒤로 공통 구조, 공용 UI, 기능 순서로 나눠 올리고 MR 전에 화면을 같이 띄워 보기로 했고, 되돌린 병합은 더 없었습니다
+- Claude가 토큰을 `localStorage`에 넣는 코드를 제안한 걸 보안 점검 중에 발견해 빼고, ESLint 규칙으로 다시 못 들어오게 막았습니다
 
-화상 상담 중에 역무원이 "화면 오른쪽 표지판으로 가세요"라고 해도 사용자 화면에는 그 표지판이 없던 문제가 있었습니다. 같은 영상을 각자 화면에 맞춰 잘라 보여 주는데, 휴대폰마다 화면 비율이 0.46에서 0.56까지 달랐던 거예요. 주소창이 나왔다 들어갔다 하면 높이가 또 바뀌어서 값을 고정할 수도 없었습니다. 그래서 접속할 때 실제 비율을 재서 서로 보내고, 받은 값에 맞추게 했습니다.
+[자세히 보기](https://github.com/luster-woo/Sobi/blob/develop/PORTFOLIO.md)
 
-### SOBI
+## 기술
 
-2026.08 ~ 10 · 6명 · 프론트엔드 파트장 · SSAFY 특화 프로젝트 우수상(팀) · [저장소](https://github.com/luster-woo/Sobi) · [제가 맡은 부분](https://github.com/luster-woo/Sobi/blob/develop/PORTFOLIO.md)
-
-<img src="https://github.com/luster-woo/Sobi/raw/develop/docs/screenshots/%EC%98%AC%EB%A6%B4%EC%82%AC%EC%A7%84_Sobi/thumb-10_dashboard.png" width="560" alt="SOBI 대시보드">
-
-소상공인에게 맞는 정책자금과 대출 상품을 찾아 주고 신청 서류 쓰는 걸 도와주는 플랫폼입니다. 인증, 대시보드, 마이페이지, 프론트 보안을 맡았습니다.
-
-첫날 제가 올려 둔 기반 위에 다른 팀원 파일 96개가 MR 하나로 들어와서 기반이 바뀌었고, 다시 맞추느라 일정이 이틀 밀렸습니다. 프로토타입을 문서로 부탁한 건데 상대는 코드로 받아들였고, 저는 결과물이 어떤 모양일지 확인을 안 했습니다. 그 뒤로는 공통 구조, 공용 UI, 기능 순서로 나눠서 올리고 MR 전에 화면을 같이 띄워 보기로 했습니다. 이후로 되돌린 병합은 없었습니다.
-
-Claude가 토큰을 `localStorage`에 넣는 코드를 제안한 적이 있는데, 보안 점검하면서 읽다가 발견해서 넣지 않았습니다. 또 들어올 수 있으니 ESLint 규칙으로 막아 뒀습니다.
-
-## 쓰는 기술
-
-주로 쓰는 건 Java·Spring Boot·JPA, Python·Django REST Framework, React·TypeScript이고 DB는 주로 PostgreSQL을 씁니다. Redis와 RabbitMQ는 AudiSay에서 직접 다뤘습니다.
-
-Docker Compose, nginx, AWS EC2 배포는 FinFit에서 한 번 해봤고 상시 운영 경험은 없습니다. Jenkins, GitLab CI, Prometheus·Grafana는 팀 인프라 담당이 만든 환경을 쓰기만 했습니다.
-
-자격증은 정보처리기사, SQLD, ADsP, 컴퓨터활용능력 1급이 있습니다.
+| | |
+|---|---|
+| 주로 씀 | Java, Spring Boot, JPA · Python, Django REST Framework · React, TypeScript · PostgreSQL, Redis, RabbitMQ |
+| 해 봄 | Docker Compose, nginx, AWS EC2 배포(상시 운영 경험은 없음) · LLM API, RAG · JUnit, Mockito |
+| 팀 환경에서 씀 | Jenkins, GitLab CI, Prometheus, Grafana (팀 인프라 담당이 구축) |
+| 자격 | 정보처리기사 · SQLD · ADsP · 컴퓨터활용능력 1급 |
 
 ## 그 밖에
 
-- [codetree](https://github.com/luster-woo/codetree): 코드트리 585문제를 59일 동안 풀고 주제별로 정리한 저장소
-- [ssafy_gumi_study](https://github.com/luster-woo/ssafy_gumi_study): 6명이 3.5개월 한 알고리즘 스터디. Fork와 PR로 제출하고 서로 리뷰했습니다
-- [TIL](https://github.com/luster-woo/TIL): SSAFY 1학기에 배운 것 정리
+- [codetree](https://github.com/luster-woo/codetree) · 코드트리 585문제를 59일 동안 풀고 주제별로 정리
+- [ssafy_gumi_study](https://github.com/luster-woo/ssafy_gumi_study) · 6명이 3.5개월 한 알고리즘 스터디, Fork와 PR로 제출하고 서로 리뷰
+- [TIL](https://github.com/luster-woo/TIL) · SSAFY 1학기에 배운 것 정리
